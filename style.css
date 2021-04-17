@@ -1,0 +1,148 @@
+:root {
+    --newspaper-title: 'Fondamento', cursive;
+    --info: 'Roboto', sans-serif;
+    --title: 'Roboto', sans-serif;
+    --content-title: 'Roboto Condensed', sans-serif;
+    --content-body: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(27, 98, 212, 50%);
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+
+/**
+*  Newspaper
+*/
+.newspaper {
+    background-color: #f6f6f6;
+    border: 1px solid black;
+    padding: 10px;
+    height: 370px;
+    width: 450px;
+    border-radius: 0 0 10px 10px;
+}
+
+.newspaper-name {
+    display: flex;
+    justify-content: center;
+}
+
+.newspaper-name p {
+    font-family: var(--newspaper-title);
+    font-size: 45px;
+    margin: 0;
+    padding-bottom: 6px;
+}
+
+
+/**
+*  Info
+*/
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.info p {
+    margin: 0;
+    padding: 0 10px;
+    font-weight: 100;
+}
+
+.info p:first-child {
+    text-transform: uppercase;
+}
+
+
+/**
+*  Title
+*/
+.title h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    margin: 5px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1;
+}
+
+
+/**
+*  Content
+*/
+.content {
+    display: flex;
+}
+
+/* Left content */
+.content-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.content-left-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    font-family: var(--content-title);
+    margin: 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.content-left-title span {
+    margin: 0 0 0 5px;
+}
+
+.content-left-text-container {
+    display: flex;
+    justify-content: space-evenly
+}
+
+.content-left-text-container p {
+    font-size: 8px;
+}
+
+
+/* Right Content*/
+.content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 0;
+}
+
+.content-right p {
+    font-size: 8px;
+    line-height: 1;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+.content-right img {
+    transform: rotate(-1deg);
+    width: 90%;
+    margin: 0;
+    padding: 0;
+}
